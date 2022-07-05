@@ -1,9 +1,19 @@
 {
-  "name": "@3nuc/vue-tsc-component-library-example",
-  "version": "0.0.6",
-  "main": "./dist/vue-tsc-component-library-example.umd.js",
-  "module": "./dist/vue-tsc-component-library-example.es.js",
+  "name": "vite-ts-lib",
+  "version": "0.1.0",
+  "main": "./dist/vite-ts-lib.umd.js",
+  "module": "./dist/vite-ts-lib.es.js",
   "typings": "./dist_types/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-ts-lib.es.js",
+      "require": "./dist/vite-ts-lib.umd.js"
+    }
+  },
+  "files": [
+    "dist",
+    "dist_types"
+  ],
   "scripts": {
     "dev": "vite",
     "test": "jest",
@@ -14,6 +24,7 @@
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
+    "@types/node": "^18.0.1",
     "@vitejs/plugin-vue": "^2.0.1",
     "@vue/test-utils": "^2.0.0-rc.18",
     "@vue/vue3-jest": "^27.0.0-alpha.4",
@@ -22,6 +33,7 @@
     "ts-jest": "^27.1.2",
     "typescript": "^4.5.4",
     "vite": "^2.7.6",
+    "vite-ts-lib": "^0.1.0",
     "vue": "^3.2.26",
     "vue-tsc": "^0.30.0"
   }
