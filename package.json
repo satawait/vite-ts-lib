@@ -1,6 +1,6 @@
 {
   "name": "vite-ts-lib",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "./dist/vite-ts-lib.umd.js",
   "module": "./dist/vite-ts-lib.es.js",
   "typings": "./dist_types/main.d.ts",
